@@ -6,7 +6,9 @@ def main():
     for word in words:
         word_count[word] = word_count.get(word, 0) + 1
 
-    print("Word Frequency:", word_count)
+    print("Word Frequency:")
+    for word, count in word_count.items():
+        print(f"{word}: {'#' * count}")
 
 if __name__ == "__main__":
     main()
