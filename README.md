@@ -43,11 +43,32 @@ Assert that the output of the script displays the word frequencies using a numbe
 Assert that only words with count > 3 are counted.
 ```
 
-Implement the feature.
+Generate a transcript.
 ```
 Generate a sample transcript.txt file that contains a transcript of the benefits of TDD for python code and has at a minimum 5000 words.
+```
+
+Implement the feature.
+```
 Implement the code defined by the test cases then run the tests using the command `'uv run pytest'.
+```
+
+Bug fix the code.
+```
 Fix the code.
+```
+
+Lint check the code.
+```
 The code should pass lint checks using ruff 'uv run ruff check {file}'
+```
+
+Bug fix the code.
+```
+Fix the code.
+```
+
+Validate the script.
+```
 Ensure the script successfully runs by passing the transcript.txt file as an argument with the command `uv run main`
 ```
