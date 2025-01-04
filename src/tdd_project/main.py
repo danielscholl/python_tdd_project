@@ -10,7 +10,7 @@ def main():
     min_count_threshold = 3
     for word, count in word_count.items():
         if count > min_count_threshold:
-        print(f"{word} ({count}): {'#' * count}")
+            print(f"{word} ({count}): {'#' * count}")
 
 if __name__ == "__main__":
     main()
