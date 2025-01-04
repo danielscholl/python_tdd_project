@@ -7,8 +7,10 @@ def main():
         word_count[word] = word_count.get(word, 0) + 1
 
     print("Word frequency count:")
+    min_count_threshold = 3
     for word, count in word_count.items():
-        print(f"{word}: {'#' * count}")
+        if count > min_count_threshold:
+        print(f"{word} ({count}): {'#' * count}")
 
 if __name__ == "__main__":
     main()
