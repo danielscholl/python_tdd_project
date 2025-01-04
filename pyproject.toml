@@ -1,0 +1,23 @@
+[project]
+name = "tdd-project"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "danielscholl", email = "dascholl@microsoft.com" }
+]
+requires-python = ">=3.13"
+dependencies = []
+
+[project.scripts]
+main = "tdd_project.main:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+dev-dependencies = [
+    "pytest>=8.3.4",
+    "ruff>=0.8.5",
+]
